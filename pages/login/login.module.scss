@@ -1,0 +1,104 @@
+.FormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Formbg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: url("../../public/assets/images/login_bg1.jpg") no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.Form {
+  position: relative;
+  width: 40%;
+  height: 325px;
+  max-width: 500px;
+  min-width: 400px;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 3rem 5rem;
+  box-shadow: 4px 4px 14px 0 rgb(83 83 83 / 14%), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+
+  & .Vlogo {
+    overflow: visible;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: -120px;
+    margin-left: -50px;
+    background-color: #dee2fe;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 4px 4px 14px 0 rgb(83 83 83 / 14%), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+
+    & .Vlogoimg {
+      position: relative;
+      display: block;
+      width: 60px;
+      height: 50px;
+      margin: 22px auto 0px auto;
+    }
+  }
+
+  & > h1 {
+    padding-bottom: 15px;
+    color: #3b5698;
+    text-align: center;
+  }
+
+  & input {
+    width: 100%;
+    height: 50px;
+    border-color: #d9e5f2;
+    font-size: 18px;
+    box-sizing: border-box;
+
+    &:-webkit-autofill::first-line {
+      font-size: 18px;
+    }
+
+    &::placeholder {
+      color: #aec6df;
+      font-size: 18px;
+    }
+  }
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.LoginButton {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  align-self: flex-end;
+
+  & .ArrowRight {
+    overflow: visible;
+    position: absolute;
+    top: 13px;
+    right: 18px;
+
+    & svg {
+      overflow: visible;
+      width: 24px;
+      height: 24px;
+      fill: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.Button {
+  display: block;
+  background-color: #645df6;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 28px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  box-shadow: 3px 3px 10px 1px #5a5a5a40;
+
+  &.medium {
+    width: 150px;
+  }
+
+  &.small {
+    font-size: 13px;
+    height: 34px;
+    padding: 0 14px;
+  }
+
+  &.outlined {
+    box-shadow: none;
+  }
+
+  &.noStyle {
+    box-shadow: 0px 0px 0 0 #fff;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  & > div {
+    margin: auto;
+  }
+}

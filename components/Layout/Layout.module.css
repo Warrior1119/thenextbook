@@ -1,0 +1,14 @@
+.Container {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+}
+
+.Content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: auto;
+  padding: 2rem;
+  background-color: #eceffb;
+}

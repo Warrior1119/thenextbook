@@ -1,0 +1,48 @@
+.ModalBodyOpen {
+  position: fixed;
+}
+
+.Overlay {
+  background-color: rgba(29, 37, 49, 0.5);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+
+  & :global(.ReactModal__Overlay) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  & :global(.ReactModal__Overlay--after-open) {
+    opacity: 1;
+  }
+
+  & :global(.ReactModal__Overlay--before-close) {
+    opacity: 0;
+  }
+}
+
+.Modal {
+  background-color: #fff;
+  border: 0;
+  bottom: 0;
+  max-height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  min-width: 650px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

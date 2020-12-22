@@ -1,0 +1,19 @@
+.Container {
+  & :global(.react-datepicker-popper) {
+    z-index: 2;
+  }
+  & :global(.react-datepicker-ignore-onclickoutside) {
+    outline: none;
+  }
+  & :global(.react-datepicker-wrapper) {
+  }
+  & input {
+    height: 22px;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid #43588f;
+    outline: none;
+    cursor: pointer;
+  }
+}
